@@ -1,0 +1,32 @@
+.main-header {
+    padding: 43.5px 0;
+}
+
+
+.main-header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo {
+    max-width: 146px;
+}
+
+.main-menu {
+}
+
+.main-menu__list-links {
+    display: flex;
+    column-gap: 64px;
+}
+
+.anchor-link {
+    color:$textColor;
+    font-family: Inconsolata;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
