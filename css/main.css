@@ -206,4 +206,47 @@ body {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
+}
+
+.preview {
+  padding-top: 72.5px;
+  padding-bottom: 72.5px;
+}
+.preview__content {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 137px;
+       column-gap: 137px;
+}
+
+.author {
+  max-width: 448px;
+}
+.author__description {
+  color: #F0E3CA;
+  font-size: 20px;
+  font-weight: 400;
+}
+.author .main-title {
+  margin-bottom: 13px;
+}
+.author .main-subtitle {
+  margin-bottom: 14px;
+}
+
+.main-title {
+  color: #78c878;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.main-subtitle {
+  color: #F0E3CA;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.avatar {
+  max-width: 629px;
+  max-height: 575px;
 }/*# sourceMappingURL=main.css.map */

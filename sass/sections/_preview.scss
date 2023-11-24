@@ -1,0 +1,10 @@
+.preview {
+    padding-top: 72.5px;
+    padding-bottom: 72.5px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        column-gap: 137px;
+    }
+}
