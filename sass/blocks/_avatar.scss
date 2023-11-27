@@ -1,4 +1,37 @@
 .avatar {
-    max-width: 629px;
-    max-height: 575px;
+    width: 629px;
+    height: 575px;
+    position: relative;
+    flex-shrink: 0;
+
+    &__under {
+        width: 370px;
+        height: 370px;
+        border-radius:56% 100% 65% 100% / 99% 29% 100% 38%  ;
+        background-color: green;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        &--first {
+            z-index: 3;
+        }
+
+        &--second {
+            transform: rotate(-30.578deg) translate(-50%, -50%);
+            transform-origin: top left;
+            z-index: 2;
+            opacity: 0.5;
+        }
+        
+        &--third {
+            transform: rotate(24.124deg) translate(-50%, -50%);
+            background-color: grey;
+            z-index: 1;
+            transform-origin: top left;
+        }
+    }
 }
