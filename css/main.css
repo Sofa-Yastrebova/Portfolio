@@ -180,7 +180,7 @@ body {
 }
 
 .main-header {
-  padding: 43.5px 0;
+  padding: 43.5px 0 48px;
 }
 
 .main-header__content {
@@ -221,6 +221,23 @@ body {
        column-gap: 137px;
 }
 
+.about-me {
+  padding: 64px 0;
+}
+
+.about-me__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+
+.about-me__text {
+  max-width: 904px;
+  font-size: 24px;
+}
+
 .author {
   max-width: 448px;
 }
@@ -258,7 +275,7 @@ body {
   width: 370px;
   height: 370px;
   border-radius: 56% 100% 65% 100%/99% 29% 100% 38%;
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.5019607843);
   overflow: hidden;
   position: absolute;
   top: 50%;
