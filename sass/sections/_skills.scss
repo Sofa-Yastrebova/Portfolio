@@ -1,0 +1,30 @@
+.skills {
+}
+
+
+.skills__content {
+}
+
+.skills__row-cards {
+    display: flex;
+    column-gap: 16px;
+}
+
+.skill-card {
+    background-color: $cardsBackground;
+    max-width: 200px;
+    padding: 61px 43px 58px;
+    border-radius: 10px;
+}
+
+.skill-card__img {
+    max-width: 128px;
+
+    &:first-child,
+    &:nth-child(2){
+        max-width: 113px;
+    }
+}
+
+.skill-card__button {
+}
