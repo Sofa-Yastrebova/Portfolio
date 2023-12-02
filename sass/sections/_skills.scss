@@ -15,16 +15,33 @@
     max-width: 200px;
     padding: 61px 43px 58px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 18px;
 }
-
-.skill-card__img {
-    max-width: 128px;
-
-    &:first-child,
-    &:nth-child(2){
-        max-width: 113px;
+.skill-card--html,
+.skill-card--css {
+    .skill-card__img {
+    width: 113px;
     }
 }
-
+.skill-card--git,
+.skill-card--javaScript,
+.skill-card--scss {
+    .skill-card__img {
+        width: 128px;
+    }
+}
 .skill-card__button {
+    border: 2px double #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    min-width: 124px;
+}
+
+.skill-card--html {
+    .skill-card__button {
+    }
 }
