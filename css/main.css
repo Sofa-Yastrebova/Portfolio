@@ -239,10 +239,20 @@ body {
   font-size: 24px;
 }
 
+.skills .context-title {
+  margin-bottom: 32px;
+}
+
+.skills__content {
+  padding: 64px 0;
+  text-align: center;
+}
+
 .skills__row-cards {
   display: flex;
   -moz-column-gap: 16px;
        column-gap: 16px;
+  justify-content: center;
 }
 
 .skill-card {
@@ -254,6 +264,7 @@ body {
   flex-direction: column;
   align-items: center;
   row-gap: 18px;
+  max-height: 300px;
 }
 
 .skill-card--html .skill-card__img,
@@ -270,7 +281,7 @@ body {
 .skill-card__button {
   border: 2px double #fff;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 24px;
   padding: 5px 10px;
   min-width: 124px;
 }
@@ -299,6 +310,12 @@ body {
 .main-subtitle {
   color: #F0E3CA;
   font-size: 40px;
+  font-weight: 700;
+}
+
+.context-title {
+  color: #78c878;
+  font-size: 32px;
   font-weight: 700;
 }
 
