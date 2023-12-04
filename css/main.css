@@ -279,11 +279,46 @@ body {
 }
 
 .skill-card__button {
-  border: 2px double #fff;
+  border: 6px double #fff;
   border-radius: 5px;
   font-size: 24px;
   padding: 5px 10px;
   min-width: 124px;
+}
+
+.skill-card--html:hover path {
+  fill: #FC490B;
+}
+.skill-card--html:hover .skill-card__button {
+  border-color: #FC490B;
+}
+
+.skill-card--css:hover path {
+  fill: #2196F4;
+}
+.skill-card--css:hover .skill-card__button {
+  border-color: #2196F4;
+}
+
+.skill-card--git:hover path {
+  fill: #F25234;
+}
+.skill-card--git:hover .skill-card__button {
+  border-color: #F25234;
+}
+
+.skill-card--javaScript:hover path {
+  fill: #FFDF00;
+}
+.skill-card--javaScript:hover .skill-card__button {
+  border-color: #FFDF00;
+}
+
+.skill-card--scss:hover path {
+  fill: #CA669B;
+}
+.skill-card--scss:hover .skill-card__button {
+  border-color: #CA669B;
 }
 
 .author {
