@@ -1,0 +1,22 @@
+.my-works {
+
+    .context-title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}
+
+.my-works__content {
+    padding:64px 0  ;
+}
+
+
+.my-works__row-cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+}
+
+.card-project {
+    max-width: 320px;
+}
