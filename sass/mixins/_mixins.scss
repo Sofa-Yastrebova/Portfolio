@@ -10,6 +10,8 @@
     &:hover {
         .skill-card__button {
             border-color:$color;
+            box-shadow: 0 0 2px 4px $color;
         }
     }
 }
+

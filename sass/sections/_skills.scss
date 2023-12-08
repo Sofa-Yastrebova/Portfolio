@@ -52,6 +52,7 @@
 .skill-card--html {
     @include color-icon($html);
     @include color-border($html);
+
 }
 .skill-card--css {
     @include color-icon($css);
