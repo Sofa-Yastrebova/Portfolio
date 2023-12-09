@@ -19,4 +19,33 @@
 
 .card-project {
     max-width: 320px;
+    position: relative;
+    overflow: hidden;
+    
+    &:hover {
+        .card-project-info {
+            top: 0;
+        }
+    }
+}
+
+.card-project-info {
+    background-color: $myWorksBackground;
+    height: 100%;
+    max-height: 320px;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: top 0.5s;
+}
+.card-project-info__top {
+}
+
+.card-project-info__stack {
+}
+.card-project-info__bottom {
+}
+.card-project-info__discription {
+}
+.card-project-info__link {
 }
