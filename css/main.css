@@ -344,6 +344,7 @@ body {
 
 .card-project {
   max-width: 320px;
+  max-height: 320px;
   position: relative;
   overflow: hidden;
 }
@@ -359,6 +360,47 @@ body {
   top: -100%;
   left: 0;
   transition: top 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 40.5px 0;
+}
+.card-project-info .context-title {
+  margin-bottom: 16px;
+}
+
+.card-project-info__top {
+  max-width: 200px;
+  width: 100%;
+  border-bottom: 1px solid #78c878;
+  padding-bottom: 16px;
+}
+
+.card-project-info__stack {
+  font-weight: 500;
+}
+
+.card-project-info__bottom {
+  max-width: 219px;
+  padding-top: 16px;
+}
+
+.card-project-info__discription {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.card-project-info__link {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #32312E;
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: #F0E3CA;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .author {
