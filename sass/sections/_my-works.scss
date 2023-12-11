@@ -64,6 +64,7 @@
 .card-project-info__bottom {
     max-width: 219px;
     padding-top: 16px;
+
 }
 .card-project-info__discription {
     text-align: left;
@@ -78,4 +79,9 @@
     color: $textColor;
     display: inline-block;
     margin: 0 auto;
+    border: 2px solid transparent;
+    &:hover {
+        border-color: $titleColor;
+        box-shadow:  0 0 2px 4px $titleColor;
+    }
 }

@@ -401,6 +401,11 @@ body {
   color: #F0E3CA;
   display: inline-block;
   margin: 0 auto;
+  border: 2px solid transparent;
+}
+.card-project-info__link:hover {
+  border-color: #78c878;
+  box-shadow: 0 0 2px 4px #78c878;
 }
 
 .author {
