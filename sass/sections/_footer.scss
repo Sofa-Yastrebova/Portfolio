@@ -2,34 +2,74 @@
 }
 
 .footer__content {
+    display: flex;
+    justify-content: center;
+    column-gap: 64px;
+    padding: 64px 0;
 }
 
 .footer__invitation {
+    max-width: 213px;
 }
 
 .logo--footer {
+    margin-bottom: 16px;
+    max-width: 160px;
 }
 
 .footer__invitation-text {
+    color: $textColor;
+    font-size: 20px;
 }
 
 .footer__contacts {
+    max-width: 400px;
+
+    .context-title {
+        margin-bottom: 16px;
+    }
 }
 
 .context-title {
 }
 
 .footer__links {
+    display: flex;
+    column-gap: 32px;
 }
 
 .links-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
 }
 
 .links-list__contact {
-}
-
-.contact-link {
+    
 }
 
 .contact-link__icon {
+    fill: $textColor;
+    max-width: 32px;
+    max-height: 32px;
+    vertical-align: middle;
+    margin-right: 16px;
+
+}
+.links-list__contact:hover {
+    .contact-link__icon{
+        fill:$titleColor;
+    }
+    .contact-link__text {
+        color:$textColor
+    }
+}
+
+.contact-link {
+
+}
+
+.contact-link__text {
+    color: $titleColor;
+    font-size: 24px;
 }
