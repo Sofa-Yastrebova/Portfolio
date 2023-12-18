@@ -4,17 +4,19 @@
 .footer__content {
     display: flex;
     justify-content: center;
-    column-gap: 64px;
     padding: 64px 0;
+    column-gap: 70px;
 }
 
 .footer__invitation {
     max-width: 213px;
+    padding-top: 5px;
 }
 
 .logo--footer {
     margin-bottom: 16px;
-    max-width: 160px;
+    width: 163px;
+    max-width: 163px;
 }
 
 .footer__invitation-text {
@@ -23,7 +25,7 @@
 }
 
 .footer__contacts {
-    max-width: 400px;
+    
 
     .context-title {
         margin-bottom: 16px;
@@ -36,6 +38,7 @@
 .footer__links {
     display: flex;
     column-gap: 32px;
+    
 }
 
 .links-list {
@@ -50,10 +53,11 @@
 
 .contact-link__icon {
     fill: $textColor;
-    max-width: 32px;
-    max-height: 32px;
+    width: 32px;
+    height: 32px;
     vertical-align: middle;
-    margin-right: 16px;
+    margin-right: 5px;
+   
 
 }
 .links-list__contact:hover {

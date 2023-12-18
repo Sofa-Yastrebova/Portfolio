@@ -411,18 +411,20 @@ body {
 .footer__content {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 64px;
-       column-gap: 64px;
   padding: 64px 0;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
 }
 
 .footer__invitation {
   max-width: 213px;
+  padding-top: 5px;
 }
 
 .logo--footer {
   margin-bottom: 16px;
-  max-width: 160px;
+  width: 163px;
+  max-width: 163px;
 }
 
 .footer__invitation-text {
@@ -430,9 +432,6 @@ body {
   font-size: 20px;
 }
 
-.footer__contacts {
-  max-width: 400px;
-}
 .footer__contacts .context-title {
   margin-bottom: 16px;
 }
@@ -451,10 +450,10 @@ body {
 
 .contact-link__icon {
   fill: #F0E3CA;
-  max-width: 32px;
-  max-height: 32px;
+  width: 32px;
+  height: 32px;
   vertical-align: middle;
-  margin-right: 16px;
+  margin-right: 5px;
 }
 
 .links-list__contact:hover .contact-link__icon {
