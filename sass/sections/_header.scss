@@ -1,5 +1,10 @@
 .main-header {
     padding: 20.5px 0 25.5px;
+
+    @media (max-width:768px) {
+        padding: 16px 0;
+        
+    }
 }
 
 
@@ -10,9 +15,15 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width: 768px) { 
+        flex-direction: column;
+        row-gap: 24px;
+    }
 }
 .logo {
     max-width: 146px;
+
 }
 
 .main-menu {
