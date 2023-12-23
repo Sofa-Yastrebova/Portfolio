@@ -9,8 +9,17 @@
 
 }
 .about-me__img {
+    flex-shrink: 0;
 }
 .about-me__text {
     max-width: 904px;
     font-size: 24px;
+    
+
+    @media (max-width:768px) {
+        font-weight: 500;
+        width: 451px;
+        font-size: 22px;
+        line-height: 1.2;
+    }
 }
