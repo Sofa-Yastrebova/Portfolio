@@ -1,5 +1,6 @@
 .author {
     max-width: 448px;
+    flex-shrink: 0;
 
     &__description {
         color: $textColor;

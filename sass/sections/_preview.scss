@@ -2,9 +2,16 @@
     padding-top: 72.5px;
     padding-bottom: 72.5px;
 
+    @media (max-width:1244px) {
+        padding: 128px 0;
+    }
+
     &__content {
         display: flex;
         align-items: center;
         column-gap: 137px;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        justify-content: center;
     }
 }
