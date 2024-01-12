@@ -1,0 +1,28 @@
+.burger {
+}
+.burger__line {
+    display: block;
+    width: 36px;
+    height: 4px;
+    background-color: $textColor;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 36px;
+        height: 4px;
+        background-color: $textColor;
+
+    }
+
+    &::before {
+        top: -10px;
+    }
+    
+    &::after {
+        bottom: -10px;
+    }
+}

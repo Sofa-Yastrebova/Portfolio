@@ -622,4 +622,26 @@ body {
   background-color: grey;
   z-index: 1;
   transform-origin: top left;
+}
+
+.burger__line {
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #F0E3CA;
+  position: relative;
+}
+.burger__line:before, .burger__line:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #F0E3CA;
+}
+.burger__line::before {
+  top: -10px;
+}
+.burger__line::after {
+  bottom: -10px;
 }/*# sourceMappingURL=main.css.map */
