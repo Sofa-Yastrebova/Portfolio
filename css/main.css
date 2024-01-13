@@ -621,6 +621,12 @@ body {
   position: relative;
   flex-shrink: 0;
 }
+@media (max-width: 570px) {
+  .avatar {
+    max-width: 413px;
+    width: 100%;
+  }
+}
 .avatar__under {
   width: 370px;
   height: 370px;
@@ -631,6 +637,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 570px) {
+  .avatar__under {
+    width: 280px;
+    height: 280px;
+  }
 }
 .avatar__under--first {
   z-index: 3;
