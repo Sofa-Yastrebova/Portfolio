@@ -2,15 +2,27 @@
     color: $titleColor;
     font-size: 64px;
     font-weight: 900;
+
+    @media (max-width:570px) {
+        font-size: 40px;
+    }
 }
 .main-subtitle {
     color: $textColor;
     font-size: 40px;
     font-weight: 700;
+
+    @media (max-width:570px) {
+        font-size: 32px;
+    }
 }
 
 .context-title {
     color: $titleColor;
     font-size: 32px;
     font-weight: 700;
+
+    // @media (max-width:570px) {
+    //     font-size: 24px;
+    // }
 }

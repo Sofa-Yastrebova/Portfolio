@@ -585,6 +585,11 @@ body {
   max-width: 448px;
   flex-shrink: 0;
 }
+@media (max-width: 570px) {
+  .author {
+    max-width: 314px;
+  }
+}
 .author__description {
   color: #F0E3CA;
   font-size: 20px;
@@ -592,6 +597,11 @@ body {
 }
 .author .main-title {
   margin-bottom: 13px;
+}
+@media (max-width: 768px) {
+  .author .main-title {
+    margin-bottom: 9px;
+  }
 }
 .author .main-subtitle {
   margin-bottom: 14px;
@@ -602,11 +612,21 @@ body {
   font-size: 64px;
   font-weight: 900;
 }
+@media (max-width: 570px) {
+  .main-title {
+    font-size: 40px;
+  }
+}
 
 .main-subtitle {
   color: #F0E3CA;
   font-size: 40px;
   font-weight: 700;
+}
+@media (max-width: 570px) {
+  .main-subtitle {
+    font-size: 32px;
+  }
 }
 
 .context-title {
