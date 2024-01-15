@@ -1,6 +1,8 @@
 .main-header {
     padding: 20.5px 0 25.5px;
 
+    
+
     @media (max-width:768px) {
         padding: 16px 0;
         
@@ -10,6 +12,7 @@
         .container {
             display: none;
         }
+        padding: 20.5px 0 ;
     }
 }
 
