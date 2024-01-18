@@ -531,6 +531,11 @@ body {
 .my-works__content {
   padding: 64px 0;
 }
+@media (max-width: 570px) {
+  .my-works__content {
+    padding: 82px 0;
+  }
+}
 
 .my-works__row-cards {
   display: flex;
@@ -668,6 +673,12 @@ body {
   display: flex;
   -moz-column-gap: 32px;
        column-gap: 32px;
+}
+@media (max-width: 570px) {
+  .footer__links {
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }
 
 .links-list {
