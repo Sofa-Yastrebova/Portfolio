@@ -1,17 +1,40 @@
+
+
 @mixin color-icon($color) {
-    &:hover {
+    @media (hover:hover) {
+        &:hover {
+            path {
+                fill:$color;
+            }
+        }
+    }
+}
+
+@mixin color-border($color) {
+    @media (hover:hover) {
+        &:hover {
+        .skill-card__button {
+            border-color:$color;
+            box-shadow: 0 0 2px 4px $color;
+        }
+        }
+    
+    }
+}
+
+@mixin color-icon-active($color){
+    &:active {
         path {
             fill:$color;
         }
     }
 }
 
-@mixin color-border($color) {
-    &:hover {
+@mixin color-border-active($color) {
+    &:active{
         .skill-card__button {
             border-color:$color;
             box-shadow: 0 0 2px 4px $color;
         }
     }
 }
-
