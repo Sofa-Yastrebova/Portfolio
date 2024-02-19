@@ -1,7 +1,12 @@
 .main-header {
     padding: 20.5px 0 25.5px;
-
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff00;
+    backdrop-filter: blur(25px);
+    z-index: 4;
 
     @media (max-width:768px) {
         padding: 16px 0;
