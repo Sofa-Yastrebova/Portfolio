@@ -7,12 +7,18 @@
 
 const burger = document.querySelector(".burger");
 const mobileMenu = document.querySelector("#mobile-menu");
+const listLinks = document.querySelectorAll(".anchor-link");
+console.log(listLinks);
 
 burger.addEventListener("click", function () {
     mobileMenu.classList.toggle("hidden");
 })
 
-
+for (let i = 0; i < listLinks.length; i++) {
+    listLinks[i].addEventListener("click", function(){
+        mobileMenu.classList.add("hidden");
+    })
+}
 
 
 
