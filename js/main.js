@@ -7,19 +7,22 @@
 
 const burger = document.querySelector(".burger");
 const mobileMenu = document.querySelector("#mobile-menu");
-const listLinks = document.querySelectorAll(".anchor-link");
-console.log(listLinks);
+// const listLinks = document.querySelectorAll(".anchor-link");
 
 burger.addEventListener("click", function () {
     mobileMenu.classList.toggle("hidden");
 })
 
-for (let i = 0; i < listLinks.length; i++) {
-    listLinks[i].addEventListener("click", function(){
+// for (let i = 0; i < listLinks.length; i++) {
+//     listLinks[i].addEventListener("click", function(){
+//         mobileMenu.classList.add("hidden");
+//     })
+// }
+mobileMenu.addEventListener("click", function(event){
+    if (event.target.closest(".anchor-link")) {
         mobileMenu.classList.add("hidden");
-    })
-}
-
+    }
+})
 
 
 
