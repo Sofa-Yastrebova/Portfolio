@@ -864,6 +864,11 @@ body {
   margin: 0 auto;
   position: relative;
 }
+@media (max-width: 768px) {
+  .slider-reviews {
+    width: 100%;
+  }
+}
 
 .slider-reviews__slide {
   background-color: #1F1E1B;
@@ -874,6 +879,13 @@ body {
   align-items: center;
   margin: 0 10px;
   border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .slider-reviews__slide {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+  }
 }
 
 .slider-reviews__avatar {
@@ -918,6 +930,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 2;
+}
+@media (max-width: 768px) {
+  .slick-arrow {
+    display: none !important;
+  }
 }
 
 .slider__arrow--right {

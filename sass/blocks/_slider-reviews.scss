@@ -3,6 +3,10 @@
     margin: 0 auto;
     position: relative;
 
+    @media (max-width:768px) {
+        width: 100%;
+    }
+
 }
 .slider-reviews__slide {
     background-color: $cardsBackground;
@@ -12,6 +16,13 @@
     align-items: center;
     margin: 0 10px;
     border-radius: 20px;
+
+    @media (max-width:768px) {
+        flex-direction: column;
+        // align-items: center;
+        text-align: center;
+        row-gap: 20px;
+    }
 }
 .slider-reviews__avatar {
     border-radius: 10px;
@@ -21,10 +32,13 @@
     overflow: hidden;
 }
 .slider-reviews__main-information {
+
+
 }
 .slider-reviews__name {
     color: $titleColor;
     font-size: 26px;
+
 }
 .slider-reviews__profession {
     text-transform: capitalize;
@@ -53,6 +67,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 2;
+
+
+    @media (max-width:768px) {
+        display: none !important;
+    
+    }
 }
 .slider__arrow--right {
     right: -60px;
