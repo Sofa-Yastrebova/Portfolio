@@ -3,11 +3,13 @@ const mobileMenu = document.querySelector("#mobile-menu");
 
 burger.addEventListener("click", function () {
     mobileMenu.classList.toggle("hidden");
+    this.classList.toggle("cross");
 })
 
 mobileMenu.addEventListener("click", function(event){
     if (event.target.closest(".anchor-link")) {
         mobileMenu.classList.add("hidden");
+        burger.classList.remove("cross");
     }
 })
 

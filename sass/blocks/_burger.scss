@@ -1,5 +1,23 @@
 .burger {
     z-index: 5;
+
+    &.cross {
+        .burger__line {
+            background-color: transparent;  
+            transition: 0.5s 0s;
+        }
+        .burger__line::before {
+            top: 0;
+            transition: top 0.5s, transform 0.5s 0.5s;
+            transform: rotate(45deg);
+        }
+        .burger__line::after {
+            bottom: 0;  
+            transition: bottom 0.5s, transform 0.5s 0.5s;
+            transform: rotate(-45deg);
+        }
+    }
+
 }
 .burger__line {
     display: block;
@@ -7,6 +25,7 @@
     height: 4px;
     background-color: $textColor;
     position: relative;
+    transition: 0.5s 0s;
 
     &:before,
     &:after {
@@ -21,9 +40,11 @@
 
     &::before {
         top: -10px;
+        transition: transform 0.5s, top 0.5s 0.5s;
     }
     
     &::after {
         bottom: -10px;
+        transition: transform 0.5s, bottom 0.5s 0.5s;
     }
 }
