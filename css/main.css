@@ -377,14 +377,43 @@ body {
 
 .skill-card {
   background-color: #1F1E1B;
-  max-width: 200px;
-  padding: 61px 43px 58px;
-  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.skill-card__front, .skill-card__back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 1s;
+}
+.skill-card__front {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 61px 43px 58px;
+  border-radius: 10px;
   row-gap: 18px;
-  max-height: 300px;
+}
+.skill-card__back {
+  color: rgb(255, 255, 255);
+  background-color: rgb(34, 85, 179);
+  transform: perspective(600px) rotateY(180deg);
+}
+.skill-card.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(0deg);
+}
+.skill-card.active .skill-card__front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+.skill-card.active .skill-card__back {
+  transform: perspective(600px) rotateY(0deg);
 }
 @media (max-width: 570px) {
   .skill-card {
