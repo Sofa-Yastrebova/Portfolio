@@ -52,8 +52,10 @@
 
     &__back {
         color: rgb(255, 255, 255);
-        background-color: rgb(34, 85, 179);
+        background-color: rgba(34, 85, 179, 0.8);
         transform: perspective(600px) rotateY(180deg);
+        backdrop-filter: blur(10px);
+
     }
 
     &__information {
@@ -76,7 +78,7 @@
     }
 
     &__close:hover {
-        transform: rotate(180deg);
+        transform: rotate(250deg);
     }
 
     &.active {

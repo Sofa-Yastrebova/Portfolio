@@ -401,8 +401,10 @@ body {
 }
 .skill-card__back {
   color: rgb(255, 255, 255);
-  background-color: rgb(34, 85, 179);
+  background-color: rgba(34, 85, 179, 0.8);
   transform: perspective(600px) rotateY(180deg);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .skill-card__information {
   position: absolute;
@@ -422,7 +424,7 @@ body {
   right: 10px;
 }
 .skill-card__close:hover {
-  transform: rotate(180deg);
+  transform: rotate(250deg);
 }
 .skill-card.active {
   position: fixed;
