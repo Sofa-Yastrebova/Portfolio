@@ -52,7 +52,7 @@
 
     &__back {
         color: rgb(255, 255, 255);
-        background-color: rgba(34, 85, 179, 0.8);
+        background-color: rgba(120, 200, 120, 0.80);
         transform: perspective(600px) rotateY(180deg);
         backdrop-filter: blur(10px);
 
@@ -86,7 +86,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotateY(0deg) !important;
-        z-index: 2;
+        z-index: 6;
         max-width: 500px;
         max-height: 400px;
         min-width: 300px;
