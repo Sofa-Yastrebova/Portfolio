@@ -1053,11 +1053,11 @@ body {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   position: fixed;
-  top: 0;
-  left: -100%;
+  left: 0;
+  top: -100%;
   z-index: 5;
-  transition: left 0.5s;
+  transition: top 0.8s;
 }
 .fade-block.open {
-  left: 0;
+  top: 0;
 }/*# sourceMappingURL=main.css.map */

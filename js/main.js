@@ -1,6 +1,7 @@
 const burger = document.querySelector(".burger");
 const mobileMenu = document.querySelector("#mobile-menu");
 const skills = document.querySelector("#skills");
+const fadeBlock = document.querySelector(".fade-block");
 
 
 
@@ -20,9 +21,11 @@ mobileMenu.addEventListener("click", function(event){
 skills.addEventListener("click", function(event){
     if (event.target.closest(".skill-card__button")) {
         event.target.closest(".skill-card").classList.add("active");
+        fadeBlock.classList.add("open");
     }
     if (event.target.closest(".skill-card__close")) {
         event.target.closest(".skill-card").classList.remove("active");
+        fadeBlock.classList.remove("open");
     }
 })
 
