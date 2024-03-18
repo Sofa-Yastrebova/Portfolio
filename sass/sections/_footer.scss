@@ -1,7 +1,10 @@
 .main-footer {
     .context-title {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 32px;
+        
+        @media (max-width:768px) {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
     }
 }
 
@@ -12,10 +15,10 @@
     padding: 64px 0;
     column-gap: 70px;
     row-gap: 70px;
-    align-items: center;
 
     @media (max-width:768px) {
         flex-direction: column;
+        align-items: center;
     }
 
 }
@@ -32,10 +35,12 @@
 }
 
 .logo--footer {
-    margin: 0 auto 16px;
+    margin-bottom: 16px;
     width: 163px;
-    max-width: 163px;
-    
+
+    @media (max-width:768px) {
+        margin: 0 auto 16px;
+    }
 }
 
 .footer__invitation-text {
