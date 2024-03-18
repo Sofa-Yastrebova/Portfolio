@@ -39,9 +39,8 @@ img {
 }
 
 img, svg {
+  height: 100%;
   width: 100%;
-  max-width: 100%;
-  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -287,7 +286,7 @@ body {
 }
 
 .preview {
-  padding-top: 72.5px;
+  padding-top: 146.5px;
   padding-bottom: 72.5px;
 }
 @media (max-width: 1244px) {
@@ -861,6 +860,12 @@ body {
     max-width: 413px;
     width: 100%;
   }
+}
+.avatar__picture {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  width: auto;
 }
 .avatar__under {
   width: 370px;
