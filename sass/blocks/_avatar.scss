@@ -3,21 +3,21 @@
     height: 575px;
     position: relative;
     flex-shrink: 0;
-    @media (max-width:570px) {
-        max-width: 413px;
-        width: 100%;
-    }
+    background-image: url(../img/preview/author-background-big.png);
+    background-repeat: no-repeat;
+    // @media (max-width:570px) {
+    
+    // }
 
-    &__picture {
-        object-fit: contain;
-        height: auto;
-        width: auto;
-    }
+    // @media (max-width:413px) {
+    //    
+    // }
+
 
     &__under {
         width: 370px;
         height: 370px;
-        border-radius:56% 100% 65% 100% / 99% 29% 100% 38%  ;
+        border-radius:56% 100% 65% 100% / 99% 29% 100% 38% ;
         background-color: #00800080;
         overflow: hidden;
         position: absolute;

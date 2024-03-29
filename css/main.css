@@ -862,18 +862,8 @@ body {
   height: 575px;
   position: relative;
   flex-shrink: 0;
-}
-@media (max-width: 570px) {
-  .avatar {
-    max-width: 413px;
-    width: 100%;
-  }
-}
-.avatar__picture {
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: auto;
-  width: auto;
+  background-image: url(../img/preview/author-background-big.png);
+  background-repeat: no-repeat;
 }
 .avatar__under {
   width: 370px;
