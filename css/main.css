@@ -795,6 +795,7 @@ body {
 @media (max-width: 570px) {
   .author {
     max-width: 314px;
+    flex-shrink: 1;
   }
 }
 .author__description {

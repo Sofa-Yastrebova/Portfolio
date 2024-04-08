@@ -65,8 +65,3 @@ $('.slider-reviews').slick({
 
 
 
-
-
-
-
-  

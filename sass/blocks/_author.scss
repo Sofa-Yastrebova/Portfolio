@@ -4,6 +4,7 @@
 
     @media (max-width:570px) {
         max-width: 314px;
+        flex-shrink: 1;
     }
 
     &__description {
