@@ -428,6 +428,17 @@ body {
   width: 90%;
   font-size: 25px;
 }
+@media (max-width: 570px) {
+  .skill-card__information {
+    font-size: 20px;
+    width: 95%;
+  }
+}
+@media (max-width: 375px) {
+  .skill-card__information {
+    font-size: 16px;
+  }
+}
 .skill-card__close {
   width: 30px;
   height: 30px;

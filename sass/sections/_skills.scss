@@ -80,6 +80,15 @@
         text-align: center;
         width: 90%;
         font-size: 25px;
+
+        @media (max-width: 570px) {
+            font-size: 20px;
+            width: 95%;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 16px;
+        }
     }
 
     &__close {
