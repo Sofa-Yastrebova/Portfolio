@@ -70,7 +70,7 @@
 
 .main-menu__list-links {
     display: flex;
-    column-gap: 64px;
+    gap: 40px;
 
     @media (max-width:570px) {
         flex-direction: column;
@@ -79,8 +79,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        row-gap: 64px;
-
     }  
 }
 
