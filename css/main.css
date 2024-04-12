@@ -807,6 +807,14 @@ body {
   font-size: 24px;
 }
 
+.reviews__content {
+  padding: 64px 0;
+}
+.reviews__content .context-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
 .author {
   max-width: 448px;
   flex-shrink: 0;
@@ -1062,6 +1070,12 @@ body {
 
 .slider-reviews__review {
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .slider-reviews__review {
+    font-size: 18px;
+    text-align: left;
+  }
 }
 
 .slick-track {
