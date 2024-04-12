@@ -639,6 +639,12 @@ body {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 375px) {
+  .card-project {
+    max-width: 290px;
+    max-height: 290px;
+  }
+}
 .card-project:hover .card-project-info {
   top: 0;
 }
@@ -657,6 +663,11 @@ body {
   width: 100%;
   text-align: center;
   padding: 40.5px 0;
+}
+@media (max-width: 375px) {
+  .card-project-info {
+    padding: 25.5px;
+  }
 }
 .card-project-info .context-title {
   margin-bottom: 16px;

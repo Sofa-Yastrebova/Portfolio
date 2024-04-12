@@ -34,6 +34,11 @@
     max-height: 320px;
     position: relative;
     overflow: hidden;
+
+    @media (max-width:375px) {
+        max-width: 290px;
+        max-height: 290px;
+    }
     
     &:hover {
         .card-project-info {
@@ -56,6 +61,11 @@
     width: 100%;
     text-align: center;
     padding: 40.5px 0;
+
+    @media (max-width:375px) {
+        padding: 25.5px;
+    }
+
 
     .context-title {
         margin-bottom: 16px;
