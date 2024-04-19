@@ -963,13 +963,16 @@ body {
   z-index: 3;
 }
 .avatar__under--second {
-  transform: rotate(-30.578deg) translate(-50%, -50%);
-  transform-origin: top left;
+  transform: rotate(-30.578deg);
   z-index: 2;
   opacity: 0.5;
+  top: 15%;
+  left: 25%;
 }
 .avatar__under--third {
-  transform: rotate(24.124deg) translate(-50%, -50%);
+  transform: rotate(24.124deg);
+  top: 15%;
+  left: 30%;
   background-color: grey;
   z-index: 1;
   transform-origin: top left;
