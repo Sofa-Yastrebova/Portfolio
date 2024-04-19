@@ -352,6 +352,7 @@ body {
 .skills__content {
   padding: 64px 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .skills__row-cards {

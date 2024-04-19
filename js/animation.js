@@ -9,19 +9,16 @@ tlStart.from('.author',{
     ease:'bounce(1.5)',
 });
 
-// gsap.from('.skill-card',{
-//     stagger:0.3,
-//     opacity:0,
-//     x:500,
-//     scrollTrigger:{
-//         markers:true,
-//         trigger: '.my-skills',
-//         start: '30% 40%',
-//         end:'50% 60%',
-//         scrub: 2,
-//         toggleActions: 'play none none reverse',
-//     }
-//   })
+gsap.from('.skill-card',{
+    opacity:0,
+    scrollTrigger:{
+        trigger: '.my-skills',
+        start: '30% 40%',
+        end:'50% 60%',
+        scrub: 10,
+        toggleActions: 'play none none reverse',
+    }
+  })
 
   gsap.from('.card-project',{
     stagger:0.3,
