@@ -814,6 +814,56 @@ body {
   margin-bottom: 32px;
 }
 
+.form-application {
+  padding: 64px 0;
+}
+
+.form {
+  max-width: 780px;
+  background-color: #1F1E1B;
+  border-radius: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
+  padding: 40px 0;
+}
+
+.form__item {
+  width: 90%;
+  position: relative;
+}
+
+.form__fake-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+.entry-field {
+  background-color: #fff;
+  width: 100%;
+  background: transparent;
+  border: 2px solid #78c878;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.entry-field--message {
+  resize: vertical;
+  height: 40px;
+  min-height: 40px;
+  max-height: 300px;
+}
+
+.form__fake-placeholder--message {
+  top: 20px;
+}
+
 .author {
   max-width: 448px;
   flex-shrink: 0;
