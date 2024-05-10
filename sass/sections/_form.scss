@@ -51,3 +51,55 @@
 .form__fake-placeholder--message {
     top: 20px;
 }
+
+.form-item {
+
+}
+.real-radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+}
+.fake-radio {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid $titleColor;
+    border-radius: 5px;
+}
+
+.fake-radio::before{
+    content: "";
+    background-image: url(../../img/Tick.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 39px;
+    height: 32px;
+    opacity: 0;
+}
+
+.real-radio:checked + .fake-radio::before{
+    opacity: 1;
+}
+
+.rules {
+}
+.rules__discription { 
+    font-size: 24px;
+}
+.rules__link {
+    color: $titleColor;
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+    font-size: 24px;
+}
+
+.form-item--rules{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    max-width: 700px;
+}
