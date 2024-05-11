@@ -914,6 +914,25 @@ body {
   max-width: 700px;
 }
 
+.btn-submit {
+  max-width: 375px;
+  width: 100%;
+  height: 60px;
+  border: 2px solid #78c878;
+  border-radius: 20px;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+@media (hover: hover) {
+  .btn-submit:hover {
+    box-shadow: 0 0 4px #78c878, inset 0 0 4px #78c878;
+  }
+}
+
+.form__item--submit {
+  text-align: center;
+}
+
 .author {
   max-width: 448px;
   flex-shrink: 0;

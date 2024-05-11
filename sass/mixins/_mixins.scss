@@ -38,3 +38,12 @@
         }
     }
 }
+
+@mixin hover-btn-submit($color) {
+    @media (hover:hover) {
+        &:hover {
+            box-shadow: 0 0 4px $color,  inset 0 0 4px $color;
+        }
+    
+    }
+}

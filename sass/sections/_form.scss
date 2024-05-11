@@ -103,3 +103,20 @@
     align-items: center;
     max-width: 700px;
 }
+
+
+.btn-submit{
+    max-width: 375px;
+    width: 100%;
+    height: 60px;
+    border: 2px solid $titleColor;
+    border-radius: 20px;
+    font-size: 32px;
+    text-transform: capitalize;  
+
+    @include hover-btn-submit($titleColor);
+}
+
+.form__item--submit{
+    text-align: center;
+}
