@@ -29,6 +29,12 @@
     transform: translateY(-50%);
     text-transform: capitalize;
     font-size: 24px;
+    transition: 0.5s;
+
+    &.focus{
+        transform: translateY(-160%);
+        font-size: 18px;
+    }
 }
 
 .entry-field {
