@@ -44,6 +44,15 @@ inputs.forEach(element => {
         placeholder.classList.add("focus");
     })
 });
+inputs.forEach(element => {
+    element.addEventListener("blur", function() {
+        const formItem = element.closest(".form__item");
+        const placeholder = formItem.querySelector(".form__fake-placeholder");
+        if(element.value.length < 1) {
+            placeholder.classList.remove("focus");
+        }
+    })
+});
 
 
 
