@@ -19,11 +19,13 @@
     <!-- scripts -->
     <script src="./js/main.js" defer="defer"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer="defer"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer="defer"></script>
     <script src="./js/slider.js" defer="defer"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer="defer"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer="defer"></script>
     <script src="./js/animation.js" defer="defer"></script>
+    <script src="./js/validation.js" defer="defer"></script>
 </head>
 
 <!-- SVG-sprite -->
@@ -438,19 +440,19 @@
         </section>
         <section class="form-application">
             <div class="container">
-                <div class="form-application__content">
-                    <form action="" class="form">
-                        <label for="" class="form__item">
+                <div class="form-application__content" >
+                    <form action="./php/mail.php" class="form" id="form">
+                        <label class="form__item">
                             <span class="form__fake-placeholder">name</span>
-                            <input class="entry-field" type="text">
+                            <input class="entry-field" type="text" name="name">
                         </label>
-                        <label for="" class="form__item">
+                        <label class="form__item">
                             <span class="form__fake-placeholder">email</span>
-                            <input class="entry-field" type="email">
+                            <input class="entry-field" type="email" name="email">
                         </label>
-                        <label for="" class="form__item">
+                        <label class="form__item">
                             <span class="form__fake-placeholder form__fake-placeholder--message">message</span>
-                            <textarea class="entry-field entry-field--message" name="" id=""></textarea>
+                            <textarea class="entry-field entry-field--message" name="message" id=""></textarea>
                         </label>
                         <div class="form-item form-item--rules">
                             <label for="real-radio">
@@ -471,6 +473,7 @@
                             <input class="btn-submit" type="submit" value="submit">
                         </label>
                     </form>
+                    <div id="answer"></div>
                 </div>
             </div>
         </section>

@@ -30,12 +30,6 @@ skills.addEventListener("click", function(event){
 })
 
 
-
-// 1.поставить прослушку события fokus на все input 
-// 2.создать класс с position и добавить его к плэйсхолдерам
-// 3.повесить на input событие blur
-// 4.возвращать плэйсхолдер вниз если пользователь ничего не написал
-
 const inputs = document.querySelectorAll(".entry-field");
 inputs.forEach(element => {
     element.addEventListener("focus", function() {
