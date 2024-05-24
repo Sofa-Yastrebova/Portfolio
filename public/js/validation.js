@@ -9,9 +9,9 @@ $(function () {
 		 message: { required: true }
 	  },
 	  messages: {
-		 name: { required: 'Поле не может быть пустым' },
-		 email: { required: 'Введите email', email: 'Отсутствует символ @' },
-		 message: { required: 'Поле не может быть пустым' }
+		 name: { required: 'Field cannot be empty' },
+		 email: { required: 'Enter email', email: 'missing @ symbol' },
+		 message: { required: 'Field cannot be empty' }
 	  },
 	  submitHandler: ajaxFormSubmit
 	});

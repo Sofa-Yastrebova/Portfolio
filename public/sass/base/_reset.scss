@@ -175,9 +175,9 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-border-bottom: 1px solid #8f8d8d;
--webkit-text-fill-color: #161616;
--webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+// border-bottom: 1px solid transparent;
+-webkit-text-fill-color: #f0e3ca;
+// -webkit-box-shadow: 0 0 0px 1000px transparent inset;
 -webkit-transition: background-color 5000s ease-in-out 0s;
 transition: background-color 5000s ease-in-out 0s;
 }
