@@ -937,6 +937,10 @@ body {
   text-align: center;
 }
 
+.error {
+  color: red;
+}
+
 .author {
   max-width: 448px;
   flex-shrink: 0;

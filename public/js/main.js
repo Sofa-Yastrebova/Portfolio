@@ -30,23 +30,31 @@ skills.addEventListener("click", function(event){
 })
 
 
-const inputs = document.querySelectorAll(".entry-field");
-inputs.forEach(element => {
-    element.addEventListener("focus", function() {
-        const formItem = element.closest(".form__item");
-        const placeholder = formItem.querySelector(".form__fake-placeholder");
-        placeholder.classList.add("focus");
-    })
-});
-inputs.forEach(element => {
-    element.addEventListener("blur", function() {
-        const formItem = element.closest(".form__item");
-        const placeholder = formItem.querySelector(".form__fake-placeholder");
-        if(element.value.length < 1) {
-            placeholder.classList.remove("focus");
+const form = document.querySelector('#form');
+
+const animationPlaceholder = (e) => {
+    const inputElement = e.target.closest('[data-input]');
+    if (inputElement) {
+        const formElement = inputElement.closest('[data-form-element]');
+        const fakePlaceholder = formElement.querySelector('[data-fake-placeholder]');
+        fakePlaceholder.classList.add('focus');
+        inputElement.addEventListener('blur', removeFocusFromPlaceholder);
+    }
+}
+
+const removeFocusFromPlaceholder = (e) => {
+    const inputElement = e.target.closest('[data-input]');
+    if (inputElement) {
+        const formElement = inputElement.closest('[data-form-element]');
+        const fakePlaceholder = formElement.querySelector('[data-fake-placeholder]');
+        if (inputElement.value.length < 1) {
+            fakePlaceholder.classList.remove('focus');
         }
-    })
-});
+        inputElement.removeEventListener('blur', removeFocusFromPlaceholder);
+    }
+}
+
+form.addEventListener('click', animationPlaceholder);
 
 
 
