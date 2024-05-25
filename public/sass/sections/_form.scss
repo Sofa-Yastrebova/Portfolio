@@ -122,6 +122,13 @@
     text-transform: capitalize;  
 
     @include hover-btn-submit($titleColor);
+
+    &.disabled{
+        border-color: grey;
+        color: grey;
+        cursor: default;
+        @include hover-btn-submit(grey);
+    }
 }
 
 .form__item--submit{
