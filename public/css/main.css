@@ -947,6 +947,13 @@ body {
   text-align: center;
 }
 
+.form__item li {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
 .error {
   color: red;
 }

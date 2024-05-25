@@ -5,7 +5,7 @@ $(function () {
     const btnSubmit = $('#submit');
 
     form.validate({
-        // wrapper: "li",
+        wrapper: "li",
         rules: {
             name: { required: true },
             email: { required: true, email: true },
