@@ -145,3 +145,18 @@
 .error{
     color: red;
 }
+
+.success {
+    text-align: center;
+    font-weight: 600;
+    
+    &__title {
+        font-size: 30px;
+        color: $titleColor;
+    }
+    
+    &__text {
+        font-size: 24px;
+    }
+}
+

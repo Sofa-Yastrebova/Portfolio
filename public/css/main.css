@@ -958,6 +958,18 @@ body {
   color: red;
 }
 
+.success {
+  text-align: center;
+  font-weight: 600;
+}
+.success__title {
+  font-size: 30px;
+  color: #78c878;
+}
+.success__text {
+  font-size: 24px;
+}
+
 .author {
   max-width: 448px;
   flex-shrink: 0;
