@@ -858,10 +858,14 @@ body {
 }
 
 .entry-field--message {
-  resize: vertical;
+  resize: none;
   height: 40px;
   min-height: 40px;
   max-height: 300px;
+  transition: 0.5s;
+}
+.entry-field--message.focus {
+  height: 300px;
 }
 
 .form__fake-placeholder--message {
