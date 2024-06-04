@@ -1122,14 +1122,20 @@ body {
 }
 @media (max-width: 650px) {
   .avatar__under {
-    width: 320px;
-    height: 320px;
+    width: 280px;
+    height: 280px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 470px) {
   .avatar__under {
     width: 220px;
     height: 220px;
+  }
+}
+@media (max-width: 370px) {
+  .avatar__under {
+    width: 200px;
+    height: 200px;
   }
 }
 .avatar__under--first {
@@ -1140,7 +1146,7 @@ body {
   z-index: 2;
   opacity: 0.5;
   top: 15%;
-  left: 25%;
+  left: 10%;
 }
 .avatar__under--third {
   transform: rotate(24.124deg);

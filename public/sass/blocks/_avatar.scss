@@ -37,12 +37,20 @@
         transform: translate(-50%, -50%);
         
         @media (max-width:650px) {
-            width: 320px;
-            height: 320px;
+            width: 280px;
+            height: 280px;
         }
-        @media (max-width:425px) {
+
+
+        @media (max-width:470px) {
             width: 220px;
             height: 220px;
+        }
+
+        @media (max-width: 370px) {
+            width: 200px;
+            height: 200px;
+            
         }
         
         
@@ -55,7 +63,7 @@
             z-index: 2;
             opacity: 0.5;
             top: 15%;
-            left: 25%;
+            left: 10%;
         }
         
         &--third {
