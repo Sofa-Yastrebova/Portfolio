@@ -250,7 +250,7 @@ body {
 
 .main-menu__list-links {
   display: flex;
-  gap: 40px;
+  gap: 35px;
 }
 @media (max-width: 570px) {
   .main-menu__list-links {
